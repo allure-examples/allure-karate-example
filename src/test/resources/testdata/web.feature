@@ -3,6 +3,9 @@ Feature: Web Test
   Background:
     * configure driver = { type: 'chrome' }
 
+  @allure.label.owner:trrchacha
+  @allure.label.epic:WebTestEpic
+  @allure.label.story:GitHubLogin
   Scenario: try to login to github
 
     Given driver 'https://github.com/login'

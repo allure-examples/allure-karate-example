@@ -2,8 +2,8 @@ Feature: Api tests
 
   # @allure.id:14
   @allure.label.owner:npolly
-  @allure.label.epic:myEpic
-  @allure.label.story:myStory
+  @allure.label.epic:APICalls
+  @allure.label.story:WikiGETRequests
   Scenario: Simple get request
     * url 'https://en.wikipedia.org'
     * path '/wiki/ER'
@@ -11,6 +11,8 @@ Feature: Api tests
     Then status 200
 
   @allure.label.layer:unit_tests
+  @allure.label.epic:APICalls
+  @allure.label.story:WikiPOSTRequests
   @allure.severity:blocker
   @allure.label.tag:some_tag
   Scenario: Simple post request
