@@ -5,7 +5,7 @@ Feature: Api tests
   @allure.label.epic:myEpic
   @allure.label.story:myStory
   Scenario: Simple get request
-    * url 'https://ru.wikipedia.org'
+    * url 'https://en.wikipedia.org'
     * path '/wiki/ER'
     When method get
     Then status 200
@@ -14,7 +14,7 @@ Feature: Api tests
   @allure.severity:blocker
   @allure.label.tag:some_tag
   Scenario: Simple post request
-    * url 'https://ru.wikipedia.org'
+    * url 'https://en.wikipedia.org'
     * path '/wiki/ER'
     When method post
     Then status 411
